@@ -5,7 +5,7 @@ services:
         build:
             context: .
             args:
-                DJANGO_ALLOWED_HOSTS : '54.224.110.149'
+                DJANGO_ALLOWED_HOSTS : '54.224.110.149 127.0.0.1'
                 DJANGO_SECRET_KEY : 'hpr#7hb5b4akto#cwom!l8xa=fpnl4!=^^3=7-e90mt9yes_hz'
         command: bash -c "python manage.py runserver 0.0.0.0:8000"
         container_name : backend_api
