@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+	backend:
+		build:
+				context: .
+				args:
+					DJANGO_ALLOWED_HOSTS : '54.224.110.149'
+					DJANGO_SECRET_KEY : 'hpr#7hb5b4akto#cwom!l8xa=fpnl4!=^^3=7-e90mt9yes_hz'
+		command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+		container_name : backend_api
+		volumes:
+			- .:/backend
+		ports:
+			- "8000:8000"
