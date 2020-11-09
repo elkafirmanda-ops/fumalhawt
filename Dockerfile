@@ -13,4 +13,4 @@ WORKDIR /backend
 
 ADD . /backend/
 
-RUN pip install -r requrements.txt
+RUN pip install -r requirements.txt
