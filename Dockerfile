@@ -11,7 +11,7 @@ ENV DJANGO_SECRET_KEY $DJANGO_SECRET_KEY
 RUN mkdir /backend
 WORKDIR /backend
 
-EXPOSE 8000
+EXPOSE 7000
 
 ADD . /backend/
 
