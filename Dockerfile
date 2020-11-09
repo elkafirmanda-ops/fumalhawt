@@ -11,6 +11,8 @@ ENV DJANGO_SECRET_KEY ${DJANGO_SECRET_KEY}
 RUN mkdir /backend
 WORKDIR /backend
 
+EXPOSE 8000
+
 ADD . /backend/
 
 RUN pip install -r requirements.txt
