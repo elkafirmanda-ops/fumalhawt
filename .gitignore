@@ -1,1 +1,4 @@
-/env/*
+env/*
+.vscode/settings.json
+api_fah/__pycache__/*
+apps/__pycache__/*
