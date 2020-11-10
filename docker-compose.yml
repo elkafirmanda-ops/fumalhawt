@@ -3,7 +3,7 @@ version: '3'
 services:
     backend:
         build: .
-        command: bash -c "python manage.py runserver 0.0.0.0:7000"
+        command: bash -c "python manage.py collectstatic && python manage.py runserver 0.0.0.0:7000"
         container_name : backend_api
         volumes:
             - .:/backend
